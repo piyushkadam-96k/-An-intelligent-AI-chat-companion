@@ -12,7 +12,7 @@ app = Flask(__name__)
 # ------------------------------------
 # 🔑 GEMINI API CONFIGURATION
 # ------------------------------------
-genai.configure(api_key="AIzaSyCg75szAUTAA-EqySG1ytFFl0moHb7OpFE")  # Replace with your Gemini API key
+genai.configure(api_key="")  # Replace with your Gemini API key
 
 DB_FILE = "memory.db"
 voice_enabled = True  # Global voice toggle
@@ -142,3 +142,4 @@ def chat():
 if __name__ == "__main__":
     print("✨ Joe AI Companion running at http://127.0.0.1:5000")
     app.run(debug=True)
+
